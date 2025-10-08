@@ -2,7 +2,7 @@
 
 ## Descripcion del Proyecto
 
-Pre-Entrega del curso de React de Talento Tech - Agencia de Habilidades para el Futuro
+Pre-Entrega del proyecto, curso de React, brindado por Talento Tech - Agencia de Habilidades para el Futuro
 
 ## Como instalar el Proyecto
 
