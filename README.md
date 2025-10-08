@@ -1,6 +1,6 @@
 # Proyecto React Tienda Pre-Entrega
 
-## Descripcion del Proyecto
+## Descripción del Proyecto
 
 Pre-Entrega del proyecto, curso de React, brindado por Talento Tech - Agencia de Habilidades para el Futuro
 
