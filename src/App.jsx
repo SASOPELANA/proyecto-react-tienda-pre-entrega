@@ -1,11 +1,22 @@
-import LogoCarrito from "../public/icon-carrito.png";
+import Header from "./components/Header";
+import Footer from "./components/Footer.jsx";
+import Inicio from "./pages/Inicio";
+import Moda from "./pages/Moda";
+import ProductoDetalle from "./pages/Detalles";
+import { Route, Routes } from "react-router-dom";
+import Carrito from "./components/Carrito";
 
 function App() {
   return (
     <main className="font-montserrat">
-      <div>Mi proyecto pre entrega</div>
-      <img src={LogoCarrito} alt="logo carrito" />
-      <h1>Carrito de compras</h1>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Inicio />} />
+        <Route path="/moda" element={<Moda />} />
+        <Route path="/detalle" element={<ProductoDetalle />} />
+      </Routes>
+      <Carrito />
+      <Footer />
     </main>
   );
 }
