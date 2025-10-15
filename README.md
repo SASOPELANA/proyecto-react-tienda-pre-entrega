@@ -17,3 +17,7 @@ Pre-Entrega del proyecto, curso de React, brindado por Talento Tech - Agencia de
 3. Iniciar el proyecto
 
 - pnpm run dev
+
+## Enlace al Proyecto
+
+- https://proyecto-pre-entrega-tienda-react.netlify.app/
