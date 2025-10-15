@@ -18,8 +18,8 @@ const Moda = () => {
 
         // Mezclar y tomar 3 productos al azar
         const randomModa = modaAll
-          .sort(() => 0.3 - Math.random()) // mezcla el array
-          .slice(0, 3); // toma 5 aleatorios
+          .sort(() => 0.4 - Math.random()) // mezcla el array
+          .slice(0, 4); // toma 5 aleatorios
 
         setProductos(randomModa);
         setLoading(false);

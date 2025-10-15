@@ -1,6 +1,12 @@
+import { Link } from "react-router-dom";
+
 const About = () => {
   return (
-    <div className="max-w-5xl mx-auto p-6 mt-10 bg-white rounded-xl shadow-md sm:p-8 md:p-12">
+    <div
+      className="max-w-5xl mx-auto p-6 my-10 bg-white rounded-xl shadow-md sm:p-8 md:p-12
+    border-4 border-gray-500/50
+    "
+    >
       <h1 className="flex justify-center text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-gray-800 text-center sm:text-left">
         Sobre Nosotros
       </h1>
@@ -21,6 +27,11 @@ const About = () => {
         ¡Gracias por confiar en nosotros! Estamos comprometidos a seguir
         mejorando y creciendo junto a nuestra comunidad de clientes.
       </p>
+      <Link to="/">
+        <button className="mt-4 bg-gray-500 text-white px-4 py-2 rounded-md hover:bg-gray-600 cursor-pointer transition-colors  ">
+          Volver
+        </button>
+      </Link>
     </div>
   );
 };
