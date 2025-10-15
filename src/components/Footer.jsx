@@ -1,4 +1,5 @@
 import iconCarrrito from "../../public/icon-carrito.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -6,9 +7,9 @@ const Footer = () => {
       <footer className="bg-gray-300 ">
         <div className="relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24">
           <div className="absolute end-4 top-4 sm:end-6 sm:top-6 lg:end-8 lg:top-8">
-            <a
+            <Link
               className="inline-block rounded-full bg-green-400 p-2 text-white shadow-sm transition hover:bg-green-300 sm:p-3 lg:p-4"
-              href="#"
+              to={"#"}
             >
               <span className="sr-only">Back to top</span>
 
@@ -24,7 +25,7 @@ const Footer = () => {
                   clipRule="evenodd"
                 />
               </svg>
-            </a>
+            </Link>
           </div>
 
           <div className="lg:flex lg:items-end lg:justify-between">
@@ -35,51 +36,57 @@ const Footer = () => {
 
               <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500 lg:text-left">
                 En nuestra tienda apostamos por la moda. Cada producto cuenta
-                con una alta calidad y un diseño único.
+                con una alta calidad y un diseño único.
               </p>
             </div>
 
             <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12">
               <li>
-                <a
+                <Link
                   className="text-gray-700 transition hover:text-gray-700/75"
-                  href="#"
+                  to={"/about"}
                 >
                   Nosotros
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a
+                <Link
                   className="text-gray-700 transition hover:text-gray-700/75"
-                  href="#"
+                  to={"#"}
                 >
                   Servicios
-                </a>
+                </Link>
               </li>
 
               <li>
                 <a
                   className="text-gray-700 transition hover:text-gray-700/75"
                   href="https://github.com/SASOPELANA/proyecto-react-tienda-pre-entrega"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   Projecto
                 </a>
               </li>
 
               <li>
-                <a
+                <Link
                   className="text-gray-700 transition hover:text-gray-700/75"
-                  href="#"
+                  to={"#"}
                 >
                   Blog
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
 
           <p className="mt-12 text-center text-sm text-gray-500 lg:text-right">
-            Copyright &copy; 2025. Todos los derechos reservados.
+            Desarrollado por:
+            <span className="font-semibold text-gray-700">
+              {" "}
+              Sergio Sopelana
+            </span>
           </p>
         </div>
       </footer>

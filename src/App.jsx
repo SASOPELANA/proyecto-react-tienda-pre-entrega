@@ -2,9 +2,9 @@ import Header from "./components/Header";
 import Footer from "./components/Footer.jsx";
 import Inicio from "./pages/Inicio";
 import Moda from "./pages/Moda";
-import ProductoDetalle from "./pages/Detalles";
+import About from "./pages/About.jsx";
+import ProductoDetalles from "./pages/DetallesProductos.jsx";
 import { Route, Routes } from "react-router-dom";
-import Carrito from "./components/Carrito";
 
 function App() {
   return (
@@ -13,9 +13,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Inicio />} />
         <Route path="/moda" element={<Moda />} />
-        <Route path="/detalle" element={<ProductoDetalle />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/detalle/:id" element={<ProductoDetalles />} />
       </Routes>
-      <Carrito />
       <Footer />
     </main>
   );

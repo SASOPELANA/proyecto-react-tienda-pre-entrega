@@ -33,10 +33,10 @@ const NavBar = () => {
 
           <li>
             <Link
-              to={"/detalle"}
+              to={"/about"}
               className="block transition-colors hover:text-gray-900 hover:font-medium"
             >
-              Detalle
+              Nosotros
             </Link>
           </li>
         </ol>
